@@ -5,14 +5,14 @@
     </a>
     {% if request.user.is_authenticated %}
     <a href="{{path_to_posts}}" class="{% if request.path == path_to_posts %}active{% endif %} item">
-        Board
+        Лента
     </a>
     {% endif %}
 
     <div class="right menu">
         {% if request.user.is_authenticated %}
         <div class="item">
-            <div class="ui floating dropdown icon button teal"> Friends
+            <div class="ui floating dropdown icon button teal"> Мои друзья
                 <i class="dropdown icon"></i>
                 <div class="menu">
                     <a href="{{path_to_all_profiles}}" class="{% if request.path == path_to_all_profiles %}active{% endif %} item">
@@ -30,9 +30,9 @@
              <div class="item">
               <form action="" method="GET">
                 <div class="ui action left icon input">
-                <input class="prompt" type="text" name='q' placeholder="name of a friend...">
+                <input class="prompt" type="text" name='q' placeholder="поиск...">
                 <i class="search icon"></i>
-                <button type='submit' class="ui button">Search</button>
+                <button type='submit' class="ui button">Найти</button>
                 </div>
             </form>
             </div>
@@ -43,11 +43,11 @@
            </a>
 
             <a href="" class="ui item">
-                Logout
+                Выйти
             </a>
         {% else %}
         <a href="" class="ui item">
-                Login
+                Войти
             </a>
         {% endif %}
     </div>

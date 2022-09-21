@@ -9,14 +9,14 @@ my profile
 <div class="ui modal mymodal">
     <i class="close icon"></i>
     <div class="header">
-    Update your profile
+    Редактироваие профиля
     </div>
     <div class="image content">
         <div class="ui medium image">
             <img src="{{ profile.avatar.url }}">
         </div>
         <div class="description">
-            <div class="ui header">Provide some additional/newest info</div>
+            <div class="ui header">Добавьте/обновите информацию о себе</div>
             <form action="" method="POST" class="ui form"
                   enctype="multipart/form-data">
             {% csrf_token %}
@@ -25,7 +25,7 @@ my profile
     </div>
   <div class="actions">
     <button type="submit" class="ui positive right labeled icon button">
-      Update
+      Обновить
       <i class="checkmark icon"></i>
     </button>
     </form>
@@ -38,7 +38,7 @@ my profile
     {% if confirm %}
         <div class="ui green message">Ваш профиль обновлен</div>
     {% endif %}
-    <h3>Мой профиль: {{ request.user }}</h3>
+    <h3>Ваш профиль: {{ request.user }}</h3>
     <div class="ui grid">
         <div class="row">
             <div class="six wide column">
