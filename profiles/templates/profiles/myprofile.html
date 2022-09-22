@@ -80,6 +80,18 @@ my profile
                                 </ul>
                             </td>
                         </tr>
+                        <tr>
+                            <td>Постов написано</td>
+                            <td>{{ profile.get_post_no }}</td>
+                        </tr>
+                        <tr>
+                            <td>Лайков поставлено</td>
+                            <td>{{ profile.get_likes_given_no }}</td>
+                        </tr>
+                        <tr>
+                            <td>Лайков получено</td>
+                            <td>{{ profile.get_likes_recieved_no }}</td>
+                        </tr>
                     </tbody>
                 </table>
             </div>
